@@ -1,0 +1,63 @@
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root{
+  --primary-color: #344a53;
+   --primary-color-variant: #8a9ea7;
+   --secondary-color: #0b0f16;
+   --secondary-color-variant: #f5dea3;
+   --text-color: #ffff;
+
+   --container-width-lg: 80%;
+   --container-width-md: 90%;
+
+   --transition: all 500ms ease;
+}
+
+body{
+  background-color: var(--secondary-color);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color) ;
+  line-height: 1.7;
+  overflow-x: hidden;
+
+}
+
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+h1,h2,h3,h4,h5 {
+  line-height: 1.2;
+  color: var(--secodary-color-variant);
+
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+a{
+  color: var(--text-color);
+}
+
+img{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
