@@ -1,6 +1,6 @@
-
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -10,54 +10,86 @@
   text-decoration: none;
 }
 
-:root{
+:root {
   --primary-color: #344a53;
-   --primary-color-variant: #8a9ea7;
-   --secondary-color: #0b0f16;
-   --secondary-color-variant: #f5dea3;
-   --text-color: #ffff;
+  --primary-color-variant: #8a9ea7;
+  --secondary-color: #0b0f16;
+  --secondary-color-variant: #f5dea3;
+  --text-color: #ffff;
 
-   --container-width-lg: 80%;
-   --container-width-md: 90%;
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
 
-   --transition: all 500ms ease;
+  --transition: all 500ms ease;
 }
 
-body{
+body {
   background-color: var(--secondary-color);
-  font-family: 'Poppins', sans-serif;
-  color: var(--text-color) ;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
   line-height: 1.7;
   overflow-x: hidden;
-
 }
 
-.container{
+.container {
   width: var(--container-width-lg);
   margin: 0 auto;
   max-width: 1920px;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.2;
   color: var(--secodary-color-variant);
-
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
-h2{
+h2 {
   font-size: 2rem;
 }
 
-a{
+a {
   color: var(--text-color);
 }
 
-img{
+img {
   display: block;
   object-fit: cover;
   width: 100%;
+}
+
+.btn {
+  color: var(--secondary-color-variant);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  border-radius: 1.5rem;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color-variant);
+  color: var(--secondary-color);
+}
+
+.btn.lg {
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+
+.btn.sm {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.btn.sm:hover {
+  background: var(--text-color);
 }

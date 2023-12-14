@@ -11,11 +11,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container nav__container">
-        <Link
-          to="/"
-          className="logo"
-          onClick={() => setOpenNav(false)}
-        >
+        <Link to="/" className="logo" onClick={() => setOpenNav(false)}>
           <img src={Logo} alt="Logo" />
         </Link>
         <ul
