@@ -1,10 +1,16 @@
+import FAQs from "../../components/FAQs"
 import MainHeader from "../../components/MainHeader"
+import Programs from "../../components/Programs"
+import Values from "../../components/Values"
 import "./index.css"
 
 const Home = () => {
 	return (
 		<div>
-	<MainHeader/>
+			<MainHeader />
+			<Programs />
+			<Values />
+			<FAQs/>
 		</div>
 	)
 }

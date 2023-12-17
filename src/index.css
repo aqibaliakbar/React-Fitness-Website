@@ -11,10 +11,11 @@
 }
 
 :root {
-  --primary-color: #344a53;
-  --primary-color-variant: #8a9ea7;
+  --primary-color: #3E4B60;
+  --primary-color-variant: #172538;
   --secondary-color: #0b0f16;
-  --secondary-color-variant: #f5dea3;
+
+  --secondary-color-variant: #F0FEFF;
   --text-color: #ffff;
 
   --container-width-lg: 80%;
@@ -93,3 +94,73 @@ img {
 .btn.sm:hover {
   background: var(--text-color);
 }
+
+section{
+  margin-top: 10rem;
+}
+
+.section__head{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section__head span{
+  background-color: var(--primary-color-variant);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  color: var(--secondary-color-variant);
+  font-size: 1.5rem;
+}
+
+.card{
+  background-color: var(--primary-color-variant);
+  border: 2px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0 3rem 0 3rem;
+  transition: var(--transition);
+}
+
+.card:hover{
+  background: transparent;
+  border-color: var(--primary-color-variant);
+  cursor: default;
+}
+
+.card span{
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.card:hover span{
+  background-color: var(--secondary-color-variant);
+  color: var(--primary-color);
+}
+
+.card .btn{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
+}
+
+.card .btn:hover{
+  color: var(--primary-color);
+}
+
+.card small{
+  margin-top: 1rem;
+  display: block;
+  font-weight: 300;
+}
+

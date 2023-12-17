@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import headerImage from "../../assets/images/main_header.svg";
+import Image from "../../assets/images/main_header.svg";
 
 
 const MainHeader = () => {
@@ -25,7 +25,7 @@ const MainHeader = () => {
           
           ></div>
           <div className="main__header-image">
-            <img src={headerImage} alt="header-image" />
+            <img src={Image} alt="header-image" />
           </div>
         </div>
       </div>
