@@ -1,5 +1,5 @@
 import "./index.css";
-import Logo from "../../assets/images/logo1.svg";
+import Logo from "../../assets/images/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import { links } from "../../data";
 import { HiMiniBarsArrowDown } from "react-icons/hi2";

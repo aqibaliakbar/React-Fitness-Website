@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Plans from "./pages/Plans";
 import Trainers from "./pages/Trainers";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/trainers" element={<Trainers />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
