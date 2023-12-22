@@ -33,6 +33,7 @@ nav {
 
 .nav__links a {
   transition: var(--transition);
+  display: inline-block;
 }
 
 .nav__links a:hover {
@@ -41,18 +42,21 @@ nav {
 
 .active-nav {
   position: relative;
+
 }
 
 .active-nav::after {
   content: "";
-  display: block;
+  display: block !important;
   position: absolute;
   width: 1.2rem;
   height: 1.2rem;
   background: var(--primary-color);
   left: calc(50% - 0.6rem);
   transform: rotate(45deg);
-  margin-top: 1rem !important;
+  transform-origin: center;
+  margin-top: 1rem ;
+
 }
 
 /*MEDIA QUERIES*/
